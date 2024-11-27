@@ -23,7 +23,7 @@ body {
   }
 
   .nav-ul {
-    @apply flex flex-col items-center gap-4 sm:flex-row md:gap-6 relative z-20;
+    @apply flex flex-col items-center gap-4 sm:flex-row md:gap-6 relative z-0;
   }
 
   .nav-li {
@@ -44,15 +44,15 @@ body {
 
   /* button component */
   .btn {
-    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300  transition-all active:scale-95 text-white mx-auto;
+    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-[#2966AC]  transition-all active:scale-95 text-white mx-auto;
   }
 
   .btn-ping {
-    @apply animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75;
+    @apply animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ACBA5E] opacity-75;
   }
 
   .btn-ping_dot {
-    @apply relative inline-flex rounded-full h-3 w-3 bg-green-500;
+    @apply relative inline-flex rounded-full h-3 w-3 bg-[#ACBA5E];
   }
 
   /* hero section */
@@ -62,15 +62,15 @@ body {
 
   /* about section */
   .grid-container {
-    @apply w-full h-full border border-black-300 bg-black-200 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+    @apply w-full h-full  bg-[#f4dfb2]  rounded-lg sm:p-7 p-4 flex flex-col gap-5 place-items-center;
   }
 
   .grid-headtext {
-    @apply text-xl font-semibold mb-2 text-white font-generalsans;
+    @apply text-xl font-semibold mb-2 text-[#000] font-generalsans;
   }
 
   .grid-subtext {
-    @apply text-[#afb0b6] text-base font-generalsans;
+    @apply text-[#60594A] text-base font-generalsans;
   }
 
   .copy-container {

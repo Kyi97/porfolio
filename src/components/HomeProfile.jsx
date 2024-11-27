@@ -1,23 +1,51 @@
 import React from "react";
-import { useGLTF } from "@react-three/drei";
+import { useRef } from "react";
+import { useGLTF, useTexture } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
+import * as THREE from "three";
 
-const Hacker = (props) => {
+const HomeProfile = (props) => {
   const { nodes, materials } = useGLTF("/models/cutecomputer.glb");
+  const monitorTexture = useTexture("/textures/desk/monitor.png");
+  const screenTexture = useTexture("/textures/desk/succeed.jpg");
+
+  const groupRef = useRef();
+  const floatSpeed = 1.5;
+  const floatHeight = 0.2;
+
+  materials[".003"].map = monitorTexture;
+  materials[".003"].map.needsUpdate = true;
+  materials["Material.001"].map = screenTexture;
+  materials["Material.001"].map.needsUpdate = true;
+
+  materials["Material.001"].emissive = new THREE.Color(0x000000); // Reduce emissive effect if set
+  materials["Material.001"].roughness = 0.8; // Increase roughness for a matte finish
+  materials["Material.001"].metalness = 0.1;
+
+  useFrame(({ clock }) => {
+    const t = clock.getElapsedTime();
+    // Calculate the new position for floating
+    const y = Math.sin(t * floatSpeed) * floatHeight;
+    if (groupRef.current) {
+      groupRef.current.position.y = -6 + y; // Float up and down
+    }
+  });
   return (
-    <group {...props} dispose={null} > {/* Increased scale */}
+    <group ref={groupRef} {...props} dispose={null}>
+      {" "}
       <group position={[1.872, 2.22, 0.79]}>
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Object_30.geometry}
           material={materials[".003"]}
-        />
+        ></mesh>
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Object_31.geometry}
           material={materials[".003"]}
-        />
+        ></mesh>
       </group>
       <mesh
         castShadow
@@ -139,4 +167,4 @@ const Hacker = (props) => {
 
 useGLTF.preload("/models/cutecomputer.glb");
 
-export default Hacker;
+export default HomeProfile;

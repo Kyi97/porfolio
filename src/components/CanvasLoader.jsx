@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Html, useProgress } from "@react-three/drei";
 
@@ -11,7 +12,7 @@ const CanvasLoader = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        flexDirection:"column",
+        flexDirection: "column",
       }}
     >
       <span className="canvas-loader"></span>
@@ -23,7 +24,7 @@ const CanvasLoader = () => {
           marginTop: 40,
         }}
       >
-       {progress != 0 ? `${progress.toFixed(2)}%` : "Loading..."}
+        {progress != 0 ? `${progress.toFixed(2)}%` : "Loading..."}
       </p>
     </Html>
   );
