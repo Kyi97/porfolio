@@ -19,7 +19,7 @@ body {
   }
 
   .head-text {
-    @apply sm:text-4xl text-3xl font-semibold text-gray_gradient;
+    @apply sm:text-4xl text-3xl font-semibold text-[#2966AC];
   }
 
   .nav-ul {
@@ -42,6 +42,10 @@ body {
     @apply bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent;
   }
 
+  .box-Shadow{
+  box-shadow: 0 4px 6px rgba(243, 223, 178, 0.5), 0 -4px 6px rgba(243, 223, 178, 0.5), 4px 0 6px rgba(243, 223, 178, 0.5), -4px 0 6px rgba(243, 223, 178, 0.5);
+}
+
   /* button component */
   .btn {
     @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-[#2966AC]  transition-all active:scale-95 text-white mx-auto;
@@ -62,7 +66,7 @@ body {
 
   /* about section */
   .grid-container {
-    @apply w-full h-full  bg-[#f4dfb2]  rounded-lg sm:p-7 p-4 flex flex-col gap-5 place-items-center;
+    @apply w-full h-full rounded-lg sm:p-7 p-4 flex flex-col gap-5 place-items-center shadow-lg shadow-[#D9AF4F];
   }
 
   .grid-headtext {

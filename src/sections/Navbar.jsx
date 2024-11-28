@@ -23,11 +23,11 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#FEFBE8] ">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#FEFBE8] shadow-lg shadow-[#D9AF4F] ">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center py-5 mx-auto c-space">
           <a
-            href="/"
+            href="#home"
             className="text-[#2966AC] font-bold text-xl hover:text-[#FECE21] transition-colors"
           >
             {/* <img src="assets/star.png" alt="logo" className="h-8 w-8 waving-hand" /> */}

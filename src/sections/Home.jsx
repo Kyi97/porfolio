@@ -49,7 +49,10 @@ const Home = () => {
   // });
 
   return (
-    <section className="h-screen w-full flex flex-col sm:flex-row relative">
+    <section
+      className="h-screen w-full flex flex-col sm:flex-row relative"
+      id="home"
+    >
       {/* Left Side */}
       <div className=" w-full sm:w-2/5  flex-col justify-center items-start mx-auto gap-3 pl-4 sm:pl-8 h-full">
         <div className="flex flex-col justify-center h-full">
@@ -69,13 +72,13 @@ const Home = () => {
           {/* Buttons */}
           <div className="flex gap-4 mt-10">
             <a
-              href="#hire-me"
+              href="#about"
               className="bg-[#2966AC] text-white py-2 px-4 rounded hover:bg-[#adba5e] transition"
             >
               Hire Me
             </a>
             <a
-              href="#my-works"
+              href="#projects"
               className="bg-[#adba5e] text-white py-2 px-4 rounded hover:bg-[#2966AC] transition"
             >
               My Works
@@ -85,7 +88,7 @@ const Home = () => {
       </div>
 
       {/* Right Side */}
-      <div className="w-full sm:w-3/5 hidden sm:flex items-center justify-center h-full mt-[1rem]">
+      <div className="w-full sm:w-3/5 hidden sm:flex items-center justify-center h-full mt-[5rem]">
         {/* <Leva /> */}
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>

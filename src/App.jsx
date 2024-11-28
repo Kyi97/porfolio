@@ -3,6 +3,10 @@ import React from "react";
 import Navbar from "./sections/navbar";
 import Home from "./sections/Home";
 import About from "./sections/About";
+import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
+import WorkExperience from "./sections/Exprience";
 
 const App = () => {
   return (
@@ -11,6 +15,10 @@ const App = () => {
         <Navbar />
         <Home />
         <About />
+        <Projects />
+        <WorkExperience />
+        <Contact />
+        <Footer />
       </main>
     </div>
   );

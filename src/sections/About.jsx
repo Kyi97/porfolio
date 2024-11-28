@@ -15,8 +15,9 @@ const About = () => {
     }, 2000);
   };
   return (
-    <section className="c-space my-20">
-      <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
+    <section className="c-space my-20" id="about">
+      <p className="head-text">About me</p>
+      <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full mt-12">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
@@ -55,7 +56,7 @@ const About = () => {
               <Globe
                 height={276}
                 width={276}
-                backgroundColor="#F3DFB2"
+                backgroundColor="#FDFBE8"
                 showAtmosphere
                 showGraticules
                 globeImageUrl="//unpkg.com/three-globe/example/img/earth-day.jpg"
