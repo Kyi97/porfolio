@@ -26,48 +26,13 @@ export const navLinks = [
   },
 ];
 
-export const clientReviews = [
-  {
-    id: 1,
-    name: "Emily Johnson",
-    position: "Marketing Director at GreenLeaf",
-    img: "assets/review1.png",
-    review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-  },
-  {
-    id: 2,
-    name: "Mark Rogers",
-    position: "Founder of TechGear Shop",
-    img: "assets/review2.png",
-    review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
-  },
-  {
-    id: 3,
-    name: "John Dohsas",
-    position: "Project Manager at UrbanTech ",
-    img: "assets/review3.png",
-    review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-  },
-  {
-    id: 4,
-    name: "Ether Smith",
-    position: "CEO of BrightStar Enterprises",
-    img: "assets/review4.png",
-    review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
-  },
-];
-
 export const myProjects = [
   {
-    title: "Podcastr - AI Podcast Platform",
-    desc: "Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.",
+    title: "CityNexus - Meet Me in the City!",
+    desc: "A smart experience lifestyle platform that connects every aspect of your day-to-day life seamlessly from workplace to home to play.Integrated with our partners to create Singapore’s first true experience ecosystem, harmonising customers’ activities with our physical spaces to enrich personal-work balance.Exclusively for registered users, the app is built to handle ad-hoc tasks with just a few taps so that you can truly focus on what matters most; connect to the bigger CDL community, and be delighted with a unique experience that evokes joy for those returning to the City!",
     subdesc:
-      "Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.",
-    href: "https://www.youtube.com/watch?v=zfAb95tJvZQ",
+      "Built with Vue.js, Nuxt.js, Tailwind CSS, TypeScript, CityNexus ensures a smooth and enjoyable experience, tailored to meet the needs of modern consumers.",
+    href: "https://citynexus.app/",
     texture: "/textures/project/project1.mp4",
     logo: "/assets/project-logo1.png",
     logoStyle: {
@@ -79,8 +44,8 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
+        name: "Vue.js",
+        path: "/assets/vue.svg",
       },
       {
         id: 2,
@@ -94,17 +59,16 @@ export const myProjects = [
       },
       {
         id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
+        name: "Nuxt.js",
+        path: "/assets/nuxt.svg",
       },
     ],
   },
   {
-    title: "LiveDoc - Real-Time Google Docs Clone",
-    desc: "LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.",
-    subdesc:
-      "With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.",
-    href: "https://www.youtube.com/watch?v=y5vE8y_f_OM",
+    title: "Optimistic - Human resource management program",
+    desc: "HR management program that helps manage organization data, HRM, working hours, and automatic salary management. Easy to use anywhere, anytime, making HR work easier and more efficient.Work anywhere, anytime with an efficient management system accessible through a web browser, requiring only an internet connection and no program installation. Monitor working hours in real-time and scale the system according to the number of employees suitable for your organization. Your data remains secure, as it is stored on a reliable cloud service.",
+    subdesc: "Built with Vue.js, Vuetify, ASP.NET Core",
+    href: "https://www.optimistic-app.com/",
     texture: "/textures/project/project2.mp4",
     logo: "/assets/project-logo2.png",
     logoStyle: {
@@ -116,33 +80,23 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
+        name: "Vue.js",
+        path: "/assets/vue.svg",
       },
       {
         id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
+        name: "Vuetify",
+        path: "assets/vuetify.svg",
       },
     ],
   },
   {
-    title: "CarePulse - Health Management System",
-    desc: "An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.",
+    title: "Jarviz - Working time recording program",
+    desc: "Clock in online, anytime, anywhere—simply check in from wherever you are, no need for time-consuming calls or manual processes.Easily manage withdrawals with a seamless, essential feature for employees. Submit a withdrawal request and get updates directly through the system, eliminating the need to call and confirm receipt.Don't miss out on the convenient leave management feature. Everyone needs time off occasionally. Select your leave date and type, then hit 'Request Leave' for a hassle-free experience.",
     subdesc:
-      "With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.",
+      "Built with Vue.js, Vuetify, ASP.NET Core and MySQL, Jarviz the Mobile Application designed for eco-conscious employees who value efficiency and sustainability. Embrace a smarter way of working with Jarviz Software, making tasks easier, more convenient, and enhancing productivity.",
     href: "https://www.youtube.com/watch?v=lEflo_sc82g",
-    texture: "/textures/project/project3.mp4",
+    texture: "https://www.jarvizapp.com/",
     logo: "/assets/project-logo3.png",
     logoStyle: {
       backgroundColor: "#60f5a1",
@@ -155,23 +109,13 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
+        name: "Vue.js",
+        path: "/assets/vue.svg",
       },
       {
         id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
-        name: "TypeScript",
-        path: "/assets/typescript.png",
-      },
-      {
-        id: 4,
-        name: "Framer Motion",
-        path: "/assets/framer.png",
+        name: "Vuetify",
+        path: "assets/vuetify.svg",
       },
     ],
   },
@@ -289,32 +233,32 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: "Framer",
-    pos: "Lead Web Developer",
-    duration: "2022 - Present",
+    name: "Codigo",
+    pos: "Frontend Developer",
+    duration: "Apr 2023 - Present",
     title:
       "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: "/assets/framer.svg",
+    icon: "/assets/Codigo.png",
     animation: "victory",
   },
   {
     id: 2,
-    name: "Figma",
-    pos: "Web Developer",
-    duration: "2020 - 2022",
+    name: "Thetys - Fusion Solution",
+    pos: "Full Stack Developer",
+    duration: "Mar 2019 - Sept 2023",
     title:
       "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: "/assets/figma.svg",
+    icon: "/assets/FS.jpg",
     animation: "clapping",
   },
   {
     id: 3,
-    name: "Notion",
-    pos: "Junior Web Developer",
-    duration: "2019 - 2020",
+    name: "Acroquest Myanmar Technology",
+    pos: "Internship",
+    duration: "May 2018 - Jul 2018",
     title:
       "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: "/assets/notion.svg",
+    icon: "/assets/Acro.png",
     animation: "salute",
   },
 ];

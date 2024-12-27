@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#FEFBE8] shadow-lg shadow-[#D9AF4F] ">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#FEFBE8] shadow-md shadow-[#D9AF4F] ">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center py-5 mx-auto c-space">
           <a

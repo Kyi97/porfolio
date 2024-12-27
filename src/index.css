@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/neue-kabel');
+@import url("https://fonts.cdnfonts.com/css/neue-kabel");
 
 @tailwind base;
 @tailwind components;
@@ -9,8 +9,8 @@
 }
 
 body {
-  background: #FEFBE8;
-  font-family: 'Neue Kabel', sans-serif;
+  background: #fefbe8;
+  font-family: "Neue Kabel", sans-serif;
 }
 
 @layer utilities {
@@ -42,9 +42,11 @@ body {
     @apply bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent;
   }
 
-  .box-Shadow{
-  box-shadow: 0 4px 6px rgba(243, 223, 178, 0.5), 0 -4px 6px rgba(243, 223, 178, 0.5), 4px 0 6px rgba(243, 223, 178, 0.5), -4px 0 6px rgba(243, 223, 178, 0.5);
-}
+  .box-Shadow {
+    box-shadow: 0 4px 6px rgba(243, 223, 178, 0.5),
+      0 -4px 6px rgba(243, 223, 178, 0.5), 4px 0 6px rgba(243, 223, 178, 0.5),
+      -4px 0 6px rgba(243, 223, 178, 0.5);
+  }
 
   /* button component */
   .btn {
@@ -66,15 +68,15 @@ body {
 
   /* about section */
   .grid-container {
-    @apply w-full h-full rounded-lg sm:p-7 p-4 flex flex-col gap-5 place-items-center shadow-lg shadow-[#D9AF4F];
+    @apply w-full h-full rounded-lg sm:p-7 p-4 flex flex-col gap-5 place-items-center shadow-lg shadow-[#D9AF4F] border border-[#D9AF4F];
   }
 
   .grid-headtext {
-    @apply text-xl font-semibold mb-2 text-[#000] font-generalsans;
+    @apply text-xl font-semibold mb-2 text-[#2966AC] font-generalsans;
   }
 
   .grid-subtext {
-    @apply text-[#60594A] text-base font-generalsans;
+    @apply text-white-600 text-base font-generalsans;
   }
 
   .copy-container {
@@ -109,23 +111,23 @@ body {
   }
 
   .work-canvas {
-    @apply col-span-1 rounded-lg bg-black-200 border border-black-300;
+    @apply col-span-1 rounded-lg  border border-[#D9AF4F] shadow-lg shadow-[#D9AF4F];
   }
 
   .work-content {
-    @apply col-span-2 rounded-lg bg-black-200 border border-black-300;
+    @apply col-span-2 rounded-lg  border border-[#D9AF4F] shadow-lg shadow-[#D9AF4F];
   }
 
   .work-content_container {
-    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
+    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-[#B3BE69] rounded-lg sm:px-5 px-2.5;
   }
 
   .work-content_logo {
-    @apply rounded-3xl w-16 h-16 p-2 bg-black-600;
+    @apply rounded-3xl w-16 h-16 p-2 bg-[#2966AC];
   }
 
   .work-content_bar {
-    @apply flex-1 w-0.5 mt-4 h-full bg-black-300 group-hover:bg-black-500 group-last:hidden;
+    @apply flex-1 w-0.5 mt-4 h-full bg-[#2966AC] group-hover:bg-[#2966AC] group-last:hidden;
   }
 
   /* contact section */

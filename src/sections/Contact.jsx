@@ -80,10 +80,11 @@ const Contact = () => {
         />
 
         <div className="contact-container">
-          <h3 className="head-text">Let's talk</h3>
+          <h3 className="head-text">Let's work together</h3>
           <p className="text-lg text-white-600 mt-3">
-            Whether you’re looking to build a new website, improve your existing
-            platform, or bring a unique project to life, I’m here to help.
+            If you want to hire me for an open Frontend Developer position, I’m
+            here to join your team and bring your projects to life with modern
+            and efficient solutions.
           </p>
 
           <form
@@ -100,7 +101,6 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="ex., John Doe"
               />
             </label>
 
@@ -113,7 +113,6 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="ex., johndoe@gmail.com"
               />
             </label>
 
@@ -126,7 +125,6 @@ const Contact = () => {
                 required
                 rows={5}
                 className="field-input"
-                placeholder="Share your thoughts or inquiries..."
               />
             </label>
 

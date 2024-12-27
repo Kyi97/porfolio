@@ -17,7 +17,7 @@ const About = () => {
   return (
     <section className="c-space my-20" id="about">
       <p className="head-text">About me</p>
-      <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full mt-12">
+      <div className="grid xl:grid-cols-3 xl:grid-rows-3 md:grid-cols-2 grid-cols-1 gap-5 h-full mt-12">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
@@ -28,8 +28,10 @@ const About = () => {
             <div>
               <p className="grid-headtext"> Hi, I&apos;m Kyi</p>
               <p className="grid-subtext">
-                with 7 years of exprience, I have honed in my skills in frontend
-                and backend development, with focus on websites.
+                With 7 years of experience, I have honed my skills in frontend
+                and backend development, focusing on website development. I am
+                willing to work as a Frontend Developer and have experience
+                working with companies based in Singapore and Thailand.
               </p>
             </div>
           </div>
@@ -44,13 +46,15 @@ const About = () => {
             <div>
               <p className="grid-headtext">Tech Stack</p>
               <p className="grid-subtext">
-                I specialize in JavaScript/TypeScript with a focus on Vue and
-                NuxtJS ecosystems.
+                I am experienced with Vue 2, Vue 3, TypeScript, Bootstrap,
+                Vuetify, Tailwind CSS, React,Three.js, Next.js, and Nuxt.js,
+                specializing in JavaScript/TypeScript with a focus on the Vue
+                and Nuxt ecosystems.
               </p>
             </div>
           </div>
         </div>
-        <div className="col-span-1 xl:row-span-4">
+        <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <div className="rounded-3xl w-full sm:w-[276px] h-fit flex justify-center items-center">
               <Globe
@@ -68,13 +72,15 @@ const About = () => {
                 I’m very flexible with time zone communications & locations
               </p>
               <p className="grid-subtext">
-                I&apos;m based in Thailand and open to remote work worldwide.
+                I'm based in Thailand, open to remote work worldwide, and
+                available to reside in another country if needed. I would also
+                require work visa sponsorship.
               </p>
               <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
             </div>
           </div>
         </div>
-        <div className="xl:col-span-2 xl:row-span-3">
+        {/* <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
             <img
               src="/assets/grid3.png"
@@ -95,13 +101,13 @@ const About = () => {
         <div className="xl:col-span-1 xl:row-span-2">
           <div className="grid-container">
             <img
-              src="assets/grid4.png"
+              src="assets/email.png"
               alt="grid-4"
-              className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
+              className="w-[64px] h-fit object-cover sm:object-top"
             />
 
             <div className="space-y-2">
-              <p className="grid-subtext text-center">Contact me</p>
+              <p className="grid-subtext text-center">Contact Info</p>
               <div className="copy-container" onClick={handleCopy}>
                 <img
                   src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"}
@@ -113,7 +119,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
