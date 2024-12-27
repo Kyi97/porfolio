@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import Navbar from "./sections/navbar";
+import Navbar from "./sections/Navbar";
 import Home from "./sections/Home";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
