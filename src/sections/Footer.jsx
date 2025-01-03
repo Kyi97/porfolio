@@ -28,7 +28,7 @@ const Footer = () => {
       </div>
 
       <p className="text-white-500">
-        © 2024 Adrian Hajdin. All rights reserved.
+        © 2024 Kyi Sin Thant. All rights reserved.
       </p>
     </footer>
   );
