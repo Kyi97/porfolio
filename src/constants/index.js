@@ -33,7 +33,7 @@ export const myProjects = [
     subdesc:
       "Built with Vue.js, Nuxt.js, Tailwind CSS, TypeScript, CityNexus ensures a smooth and enjoyable experience, tailored to meet the needs of modern consumers.",
     href: "https://citynexus.app/",
-    texture: "/textures/project/project1.mp4",
+    texture: "/textures/desk/monitor.png",
     logo: "/assets/project-logo1.png",
     logoStyle: {
       backgroundColor: "#2A1816",
@@ -69,7 +69,7 @@ export const myProjects = [
     desc: "HR management program that helps manage organization data, HRM, working hours, and automatic salary management. Easy to use anywhere, anytime, making HR work easier and more efficient.Work anywhere, anytime with an efficient management system accessible through a web browser, requiring only an internet connection and no program installation. Monitor working hours in real-time and scale the system according to the number of employees suitable for your organization. Your data remains secure, as it is stored on a reliable cloud service.",
     subdesc: "Built with Vue.js, Vuetify, ASP.NET Core",
     href: "https://www.optimistic-app.com/",
-    texture: "/textures/project/project2.mp4",
+    texture: "/textures/desk/monitor.png",
     logo: "/assets/project-logo2.png",
     logoStyle: {
       backgroundColor: "#13202F",
@@ -95,8 +95,8 @@ export const myProjects = [
     desc: "Clock in online, anytime, anywhere—simply check in from wherever you are, no need for time-consuming calls or manual processes.Easily manage withdrawals with a seamless, essential feature for employees. Submit a withdrawal request and get updates directly through the system, eliminating the need to call and confirm receipt.Don't miss out on the convenient leave management feature. Everyone needs time off occasionally. Select your leave date and type, then hit 'Request Leave' for a hassle-free experience.",
     subdesc:
       "Built with Vue.js, Vuetify, ASP.NET Core and MySQL, Jarviz the Mobile Application designed for eco-conscious employees who value efficiency and sustainability. Embrace a smarter way of working with Jarviz Software, making tasks easier, more convenient, and enhancing productivity.",
-    href: "https://www.youtube.com/watch?v=lEflo_sc82g",
-    texture: "https://www.jarvizapp.com/",
+    href: "https://www.jarvizapp.com/",
+    texture: "/textures/desk/monitor.png",
     logo: "/assets/project-logo3.png",
     logoStyle: {
       backgroundColor: "#60f5a1",
