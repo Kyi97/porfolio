@@ -11,19 +11,20 @@ export const navLinks = [
   },
   {
     id: 3,
-    name: "Expriences",
-    href: "#expriences",
-  },
-  {
-    id: 4,
     name: "Projects",
     href: "#projects",
   },
   {
-    id: 5,
-    name: "Contact",
-    href: "#contact",
+    id: 4,
+    name: "Expriences",
+    href: "#expriences",
   },
+
+  // {
+  //   id: 5,
+  //   name: "Contact",
+  //   href: "#contact",
+  // },
 ];
 
 export const myProjects = [
@@ -34,7 +35,7 @@ export const myProjects = [
       "Built with Vue.js, Nuxt.js, Tailwind CSS, TypeScript, CityNexus ensures a smooth and enjoyable experience, tailored to meet the needs of modern consumers.",
     href: "https://citynexus.app/",
     texture: "/textures/desk/monitor.png",
-    logo: "/assets/project-logo1.png",
+    logo: "/assets/citynexus.svg",
     logoStyle: {
       backgroundColor: "#2A1816",
       border: "0.2px solid #36201D",
@@ -70,7 +71,7 @@ export const myProjects = [
     subdesc: "Built with Vue.js, Vuetify, ASP.NET Core",
     href: "https://www.optimistic-app.com/",
     texture: "/textures/desk/monitor.png",
-    logo: "/assets/project-logo2.png",
+    logo: "/assets/optimistic.png",
     logoStyle: {
       backgroundColor: "#13202F",
       border: "0.2px solid #17293E",
@@ -97,15 +98,13 @@ export const myProjects = [
       "Built with Vue.js, Vuetify, ASP.NET Core and MySQL, Jarviz the Mobile Application designed for eco-conscious employees who value efficiency and sustainability. Embrace a smarter way of working with Jarviz Software, making tasks easier, more convenient, and enhancing productivity.",
     href: "https://www.jarvizapp.com/",
     texture: "/textures/desk/monitor.png",
-    logo: "/assets/project-logo3.png",
+    logo: "/assets/jarviz.png",
     logoStyle: {
-      backgroundColor: "#60f5a1",
-      background:
-        "linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
-      border: "0.2px solid rgba(208, 213, 221, 1)",
-      boxShadow: "0px 0px 60px 0px rgba(35, 131, 96, 0.3)",
+      backgroundColor: "#13202F",
+      border: "0.2px solid #17293E",
+      boxShadow: "0px 0px 60px 0px #2F6DB54D",
     },
-    spotlight: "/assets/spotlight3.png",
+    spotlight: "/assets/spotlight2.png",
     tags: [
       {
         id: 1,
@@ -161,9 +160,8 @@ export const workExperiences = [
     id: 1,
     name: "Codigo",
     pos: "Frontend Developer",
-    duration: "Apr 2023 - Present",
-    title:
-      "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
+    duration: "Apr 2023 - Oct 2024",
+    title: "",
     icon: "/assets/Codigo.png",
     animation: "victory",
   },
@@ -172,8 +170,7 @@ export const workExperiences = [
     name: "Thetys - Fusion Solution",
     pos: "Full Stack Developer",
     duration: "Mar 2019 - Sept 2023",
-    title:
-      "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
+    title: "",
     icon: "/assets/FS.jpg",
     animation: "clapping",
   },
@@ -182,8 +179,7 @@ export const workExperiences = [
     name: "Acroquest Myanmar Technology",
     pos: "Internship",
     duration: "May 2018 - Jul 2018",
-    title:
-      "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
+    title: "",
     icon: "/assets/Acro.png",
     animation: "salute",
   },
