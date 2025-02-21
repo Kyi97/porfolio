@@ -161,7 +161,13 @@ export const workExperiences = [
     name: "Codigo - The Mobile App Company",
     pos: "Senior Front-end Developer",
     duration: "April 2024 - January 2025",
-    title: "",
+    title: `• Led the migration of a large-scale web application, ensuring smooth functionality and minimal disruption to the user experience during the transition.
+• Enhanced user experience by optimizing web applications for maximum speed and scalability.
+• Developed and maintained code for client-facing websites, resulting in streamlined user experiences and increased customer satisfaction.
+• Troubleshot technical issues related to front-end development, ensuring prompt resolution to maintain project timelines.
+• Utilized testing frameworks like Jest for front-end unit testing.
+• Collaborated with back-end developers to improve website functionality and integrate new features.
+• Worked closely with UX/UI designers to translate their designs into functional web applications.`,
     icon: "/assets/Codigo.png",
     animation: "victory",
   },
@@ -170,10 +176,22 @@ export const workExperiences = [
     name: "Fusion Solution Co., Ltd - Thetys",
     pos: "Full-Stack Developer",
     duration: "March 2019 - September 2024",
-    title: "",
+    title: `• Implemented responsive designs and optimized user experience across devices using modern front-end technologies.
+  • Streamlined project delivery by integrating front-end and back-end technologies seamlessly.
+  • Developed RESTful APIs and web services, ensuring efficient data handling and seamless communication with the front-end.
+  • Developed responsive web designs, ensuring compatibility across various devices and browsers.
+  • Implemented security best practices, including authentication and authorization mechanisms to protect user data and control access.
+  • Participated in the estimation, planning, and prioritization of development tasks.
+  • Collaborated effectively with cross-functional teams to ensure timely delivery of projects.
+  • Developed unit test cases for testing and automation.
+  • Optimized application performance and database queries for efficiency and scalability.
+  • Reviewed code, debugged problems, and corrected issues.
+  • Maintained clear documentation of system architectures, workflows, and coding standards for reference by other team members.
+  • In addition to hands-on development, I was responsible for overseeing team tasks, ensuring efficient workflows, and maintaining project timelines.`,
     icon: "/assets/FS.jpg",
     animation: "clapping",
   },
+
   {
     id: 3,
     name: "Acroquest Myanmar Technology",

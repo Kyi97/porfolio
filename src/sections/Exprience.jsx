@@ -57,7 +57,7 @@ const WorkExperience = () => {
                     <p className="text-sm mb-5 group-hover:text-[#2966AC]">
                       {item.pos} -- <span>{item.duration}</span>
                     </p>
-                    <p className="group-hover:text-[#2966AC] transition-all ease-in-out duration-500">
+                    <p className="group-hover:text-[#2966AC] transition-all ease-in-out duration-500 whitespace-pre-line">
                       {item.title}
                     </p>
                   </div>
