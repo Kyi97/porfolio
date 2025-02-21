@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unknown-property */
 // eslint-disable-next-line no-unused-vars
 import React, { Suspense } from "react";
+import { useState, useEffect } from "react";
+import TrackVisibility from "react-on-screen";
 import { Canvas } from "@react-three/fiber";
 import {
   PerspectiveCamera,
@@ -11,79 +13,105 @@ import {
 import CanvasLoader from "../components/CanvasLoader";
 import HomeProfile from "../components/HomeProfile";
 import FloatingElements from "../components/FloatingElements";
-// import { useControls } from "leva";
-// import { Leva } from "leva";
 
 const Home = () => {
-  // const x = useControls("HomeProfile", {
-  //   positionX: {
-  //     value: -1.2,
-  //     min: -10,
-  //     max: 20,
-  //   },
-  //   positionY: {
-  //     value: -5.8,
-  //     min: -10,
-  //     max: 20,
-  //   },
-  //   positionZ: {
-  //     value: 1,
-  //     min: -10,
-  //     max: 20,
-  //   },
-  //   rotationX: {
-  //     value: 0.3,
-  //     min: -10,
-  //     max: 20,
-  //   },
-  //   rotationY: {
-  //     value: 0.1,
-  //     min: -10,
-  //     max: 20,
-  //   },
-  //   rotationZ: {
-  //     value: 0.0,
-  //     min: -10,
-  //     max: 20,
-  //   },
-  // });
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [text, setText] = useState("");
+  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [index, setIndex] = useState(1);
+  const toRotate = ["Web Developer", "Front-end Developer"];
+  const period = 2000;
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => {
+      clearInterval(ticker);
+    };
+  }, [text]);
+
+  const tick = () => {
+    let i = loopNum % toRotate.length;
+    let fullText = toRotate[i];
+    let updatedText = isDeleting
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
+
+    setText(updatedText);
+
+    if (isDeleting) {
+      setDelta((prevDelta) => prevDelta / 2);
+    }
+
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setIndex((prevIndex) => prevIndex - 1);
+      setDelta(period);
+    } else if (isDeleting && updatedText === "") {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setIndex(1);
+      setDelta(500);
+    } else {
+      setIndex((prevIndex) => prevIndex + 1);
+    }
+  };
 
   return (
     <section
-      className="h-screen w-full flex flex-col sm:flex-row relative"
+      className="h-screen w-full flex flex-col sm:flex-row relative home"
       id="home"
     >
       {/* Left Side */}
       <div className=" w-full sm:w-2/5  flex-col justify-center items-start mx-auto gap-3 pl-4 sm:pl-8 h-full">
         <div className="flex flex-col justify-center h-full">
-          <p className="text-[#adba5e] text-left sm:text-lg text-sm mt-0">
-            Hey there,
-          </p>
-          <p className="mt-0 sm:text-6xl text-xl font-extrabold text-[#2966AC] text-left font-generalsans">
-            I&apos;m Kyi Sin Thant
-          </p>
-          <p className="text-[#adba5e] text-left sm:text-lg text-sm mt-[0.5rem]">
-            Front-end developer{" "}
-            <span className=" text-[#2966AC] text-left sm:text-lg text-sm mt-[0.5rem]">
-              {" "}
-              with a background in web development.
-            </span>
-          </p>
-          {/* Buttons */}
-          <div className="flex gap-4 mt-10">
-            <a
-              href="#about"
-              className="bg-[#2966AC] text-white py-2 px-4 rounded hover:bg-[#adba5e] transition"
-            >
-              Hire Me
-            </a>
-            <a
-              href="#projects"
-              className="bg-[#adba5e] text-white py-2 px-4 rounded hover:bg-[#2966AC] transition"
-            >
-              My Works
-            </a>
-          </div>
+          <TrackVisibility>
+            {({ isVisible }) => (
+              <div
+                className={isVisible ? "animate__animated animate__fadeIn" : ""}
+              >
+                <h1>
+                  {`Hello ! I'm Kyi`}{" "}
+                  <span
+                    className="txt-rotate"
+                    dataPeriod="1000"
+                    data-rotate='[ "Web Developer", "Front-end Developer" ]'
+                  >
+                    <span className="wrap">{text}</span>
+                  </span>
+                </h1>
+                <p className="text-gray-400 pt-6">
+                  with 7 years of experience specializing in front-end
+                  technologies like Vue.js, Nuxt.js, React.js, TypeScript, and
+                  Tailwind CSS. With a strong foundation in JavaScript and
+                  Three.js, I create interactive and visually engaging user
+                  experiences. Additionally, I have backend expertise in .NET,
+                  enabling me to build seamless and scalable web applications.
+                  Passionate about clean code, performance optimization, and
+                  user-centric design, I thrive in collaborative environments
+                  and enjoy leading projects that drive innovation.
+                </p>
+                {/* Buttons */}
+                <div className="flex gap-4 mt-10">
+                  <a
+                    href="#about"
+                    className="bg-[#2966AC] text-white py-2 px-4 rounded hover:bg-[#adba5e] transition"
+                  >
+                    Hire Me
+                  </a>
+                  <a
+                    href="#projects"
+                    className="bg-[#adba5e] text-white py-2 px-4 rounded hover:bg-[#2966AC] transition"
+                  >
+                    My Works
+                  </a>
+                </div>
+              </div>
+            )}
+          </TrackVisibility>
         </div>
       </div>
 
